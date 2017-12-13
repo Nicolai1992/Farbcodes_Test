@@ -87,7 +87,7 @@ Resistor::Resistor(std::string farben) {
     p = farben.find(" ");
     R2 = farben.substr(0, p);
     farben = farben.substr(p + 1);
-    R3 = farben.substr(0);
+    R3 = farben;
     Resistor::stringToValue(R1, R2, R3);
 }
 
