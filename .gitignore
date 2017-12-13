@@ -30,4 +30,6 @@
 *.exe
 *.out
 *.app
-/Farbcodes/Farbcodes.VC.VC.opendb
+
+# VS Specific Files
+*.VC.VC.opendb
