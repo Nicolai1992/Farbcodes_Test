@@ -1,4 +1,6 @@
-﻿  Main.cpp
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\main.cpp(20): warning C4305: 'argument': truncation from 'double' to 'float'
+﻿  Farbcodes.cpp
+c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(40): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(62): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   Farbcodes.vcxproj -> C:\Users\nicol\Documents\Repos\Farbcodes_Test\Farbcodes\Debug\Farbcodes.exe
   Farbcodes.vcxproj -> C:\Users\nicol\Documents\Repos\Farbcodes_Test\Farbcodes\Debug\Farbcodes.pdb (Partial PDB)

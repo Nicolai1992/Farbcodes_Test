@@ -3,15 +3,18 @@
 
 #include <iostream>
 #include <string>
+#include <map>
 
 class Resistor {
     std::string R1;
     std::string R2;
     std::string R3;
     float value;
-    void tensDigit(const std::string& R, float& value);
-    void onesDigit(const std::string& R, float& value);
-    void power(const std::string& R, float& value);
+    std::map<std::string, int> reference;
+    void initReference();
+    void tensDigit(const std::string& R);
+    void onesDigit(const std::string& R);
+    void power(const std::string& R);
     void stringToValue(const std::string& R1, const std::string& R2, const std::string& R3);
     void valueToStrings(float& value);
 public:

@@ -2,51 +2,50 @@
 #include <sstream>
 #include <cmath>
 
+
 #include "farbcodes.h"
 
-void Resistor::tensDigit(const std::string& R, float& value) {
-    if (R == "schwarz")value = 0 * 10;
-    if (R == "braun")value = 1 * 10;
-    if (R == "rot")value = 2 * 10;
-    if (R == "orange")value = 3 * 10;
-    if (R == "gelb")value = 4 * 10;
-    if (R == "gruen")value = 5 * 10;
-    if (R == "blau")value = 6 * 10;
-    if (R == "violett")value = 7 * 10;
-    if (R == "grau")value = 8 * 10;
-    if (R == "weiss")value = 9 * 10;
+void Resistor::initReference() {
+    reference["schwarz"] = 0;
+    reference["braun"] = 1;
+    reference["rot"] = 2;
+    reference["orange"] = 3;
+    reference["gelb"] = 4;
+    reference["gruen"] = 5;
+    reference["blau"] = 6;
+    reference["violett"] = 7;
+    reference["grau"] = 8;
+    reference["weiss"] = 9;
 }
 
-void Resistor::onesDigit(const std::string& R, float& value) {
-    if (R == "schwarz")value += 0;
-    if (R == "braun")value += 1;
-    if (R == "rot")value += 2;
-    if (R == "orange")value += 3;
-    if (R == "gelb")value += 4;
-    if (R == "gruen")value += 5;
-    if (R == "blau")value += 6;
-    if (R == "violett")value += 7;
-    if (R == "grau")value += 8;
-    if (R == "weiss")value += 9;
+void Resistor::tensDigit(const std::string& R) {
+    for (auto& i : reference) {
+        if (R == i.first) {
+            value = i.second * 10;
+        }
+    }
 }
 
-void Resistor::power(const std::string& R, float& value) {
-    if (R == "schwarz")value *= pow(10, 0);
-    if (R == "braun")value *= pow(10, 1);
-    if (R == "rot")value *= pow(10, 2);
-    if (R == "orange")value *= pow(10, 3);
-    if (R == "gelb")value *= pow(10, 4);
-    if (R == "gruen")value *= pow(10, 5);
-    if (R == "blau")value *= pow(10, 6);
-    if (R == "violett")value *= pow(10, 7);
-    if (R == "grau")value *= pow(10, 8);
-    if (R == "weiss")value *= pow(10, 9);
+void Resistor::onesDigit(const std::string& R) {
+    for (auto& i : reference) {
+        if (R == i.first) {
+            value += i.second;
+        }
+    }
+}
+
+void Resistor::power(const std::string& R) {
+    for (auto& i : reference) {
+        if (R == i.first) {
+            value *= pow(10, i.second);
+        }
+    }
 }
 
 void Resistor::stringToValue(const std::string& R1, const std::string& R2, const std::string& R3) {
-    tensDigit(R1, value);
-    onesDigit(R2, value);
-    power(R3, value);
+    tensDigit(R1);
+    onesDigit(R2);
+    power(R3);
 }
 
 void Resistor::valueToStrings(float& value) {
@@ -65,7 +64,7 @@ void Resistor::valueToStrings(float& value) {
 }
 
 Resistor::Resistor() :R1(NULL), R2(NULL), R3(NULL), value(0) {
-
+    initReference();
 }
 
 Resistor::~Resistor() {
@@ -73,6 +72,7 @@ Resistor::~Resistor() {
 }
 
 Resistor::Resistor(std::string F1, std::string F2, std::string F3) {
+    initReference();
     R1 = F1;
     R2 = F2;
     R3 = F3;
@@ -80,7 +80,8 @@ Resistor::Resistor(std::string F1, std::string F2, std::string F3) {
 }
 
 Resistor::Resistor(std::string farben) {
-    size_t p = farben.find(" ");
+    initReference();
+    auto p = farben.find(" ");
     R1 = farben.substr(0, p);
     farben = farben.substr(p + 1);
     p = farben.find(" ");
@@ -91,11 +92,13 @@ Resistor::Resistor(std::string farben) {
 }
 
 Resistor::Resistor(float value) {
+    initReference();
     this->value = value;
     Resistor::valueToStrings(value);
 }
 
 Resistor::Resistor(float value, char unit) {
+    initReference();
     if (unit == 'k')value *= 1000;
     else if (unit == 'M')value *= 1000000;
     this->value = value;
