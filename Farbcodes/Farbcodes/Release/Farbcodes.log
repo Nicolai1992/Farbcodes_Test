@@ -1,0 +1,19 @@
+﻿  Farbcodes.cpp
+Farbcodes.cpp(34): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(35): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(36): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(37): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(39): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(40): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(41): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(42): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(43): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+Farbcodes.cpp(57): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Main.cpp
+Main.cpp(20): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating code
+  All 176 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Farbcodes.vcxproj -> C:\Users\nicol\Documents\Repos\Farbcodes_Test\Farbcodes\Release\Farbcodes.exe
+  Farbcodes.vcxproj -> C:\Users\nicol\Documents\Repos\Farbcodes_Test\Farbcodes\Release\Farbcodes.pdb (Full PDB)

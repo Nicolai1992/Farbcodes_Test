@@ -1,17 +1,4 @@
 ﻿  Main.cpp
 c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\main.cpp(20): warning C4305: 'argument': truncation from 'double' to 'float'
-  Farbcodes.cpp
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(34): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(35): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(36): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(37): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(38): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(39): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(40): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(41): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(42): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(43): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-c:\users\nicol\documents\repos\farbcodes_test\farbcodes\farbcodes\farbcodes.cpp(57): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
   Farbcodes.vcxproj -> C:\Users\nicol\Documents\Repos\Farbcodes_Test\Farbcodes\Debug\Farbcodes.exe
   Farbcodes.vcxproj -> C:\Users\nicol\Documents\Repos\Farbcodes_Test\Farbcodes\Debug\Farbcodes.pdb (Partial PDB)
